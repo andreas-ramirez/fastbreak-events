@@ -15,7 +15,7 @@ export async function signUp(formData: { email: string; password: string }) {
     return { success: false, error: error.message };
   }
 
-  redirect("/");
+  redirect("/event/dashboard");
 }
 
 export async function signIn(formData: { email: string; password: string }) {
@@ -30,7 +30,7 @@ export async function signIn(formData: { email: string; password: string }) {
     return { success: false, error: error.message };
   }
 
-  redirect("/dashboard");
+  redirect("/event/dashboard");
 }
 
 export async function signOut() {
