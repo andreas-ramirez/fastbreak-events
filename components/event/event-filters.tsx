@@ -66,7 +66,7 @@ export function EventFilters({
           <SelectValue placeholder="All Sports" />
         </SelectTrigger>
 
-        <SelectContent className="bg-slate-950/95 border-white/10 text-slate-100 backdrop-blur">
+        <SelectContent className="bg-slate-950/60 border-white/10 text-slate-100 backdrop-blur">
           <SelectItem value="all" className="focus:bg-white/10">
             All Sports
           </SelectItem>
