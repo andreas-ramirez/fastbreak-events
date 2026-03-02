@@ -1,9 +1,6 @@
 "use client";
 
-// import { useRouter } from "next/navigation";
 import { EventCard } from "./event-card";
-// import { deleteEvent } from "@/app/actions/events";
-// import { toast } from "sonner";
 import type { EventWithDetails } from "@/lib/types";
 import { CreateEventButton } from "./event-create-button";
 
@@ -37,9 +34,6 @@ export function EventsGridClient({
           key={event.id}
           event={event}
           userOwned={event.user_id === currentUserId}
-          //   onEdit={() => router.push(`/dashboard/${event.id}/edit`)}
-          //   onDelete={() => handleDelete(event.id)}
-          //   onView={() => router.push(`/dashboard/${event.id}`)}
         />
       ))}
     </div>

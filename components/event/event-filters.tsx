@@ -36,7 +36,7 @@ export function EventFilters({
 
   function handleSearch(value: string) {
     if (searchTimeout) clearTimeout(searchTimeout);
-    setSearchTimeout(setTimeout(() => updateParams("search", value), 300));
+    setSearchTimeout(setTimeout(() => updateParams("search", value), 600));
   }
 
   return (

@@ -37,6 +37,8 @@ interface EventFormProps {
   event?: EventWithDetails; // passed in for edit mode
 }
 
+// <Suspense fallback={<SkeletonForm />}>
+
 export function EventForm({ sportTypes, event }: EventFormProps) {
   const [loading, setLoading] = useState(false);
   const isEditing = !!event;
